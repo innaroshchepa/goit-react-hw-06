@@ -15,9 +15,9 @@
 .input {
     padding: 8px;
     font-size: 12px;
-    /* width: 340px; */
     margin-bottom: 8px;
     margin-top: 8px;
+    background-color: transparent;
 }
 
 .error {

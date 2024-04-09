@@ -4,11 +4,14 @@
     gap: 12px;
 }
 .div>input {
-    width: 390px;
+    width: 400px;
     padding: 4px;
     font-size: 12px;
 }
 
 .label {
     font-size: 20px;
+}
+input {
+    background-color: transparent;
 }
