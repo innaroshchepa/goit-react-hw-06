@@ -13,10 +13,10 @@ const contactSchema = Yup.object().shape({
   name: Yup.string()
     .min(3, "Too short!")
     .max(30, "Too long!")
-    .required("This is required you dummy!"),
+    .required("This is required!"),
   number: Yup.string()
     .matches(phoneRegExp, "Phone number is not valid")
-    .required("This is required you dummy!"),
+    .required("This is required!"),
 });
 
 export default function ContactForm() {
@@ -37,7 +37,7 @@ export default function ContactForm() {
     }
     dispatch(addContact(values));
     action.resetForm();
-    SuccessToast("Contact added successfully!");
+    SuccessToast("Contact added!");
   };
 
   return (
